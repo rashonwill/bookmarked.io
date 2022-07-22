@@ -84,7 +84,7 @@ function _setBookmarks() {
       id: 6,
       link: "https://www.linkedin.com",
       name: "LinkedIn",
-      comment: "What do you wnat to talk about?",
+      comment: "What do you want to talk about?",
       tags: "#linkedin #networking #careers",
       icon:
         "https://cdn.icon-icons.com/icons2/3041/PNG/512/linkedin_logo_icon_189225.png"
