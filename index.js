@@ -77,7 +77,7 @@ function _setBookmarks() {
       name: "Facebook",
       comment: "What's on your mind?",
       tags: "#facebook #socialmedia",
-      icon: "https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
+      icon: "https://cdn.icon-icons.com/icons2/1826/PNG/512/4202110facebooklogosocialsocialmedia-115707_115594.png"
     },
 
     {
@@ -87,7 +87,7 @@ function _setBookmarks() {
       comment: "What do you wnat to talk about?",
       tags: "#linkedin #networking #careers",
       icon:
-        "https://www.pngitem.com/pimgs/m/108-1086954_linkedin-logo-png-transparent-background-linkedin-logo-png.png"
+        "https://cdn.icon-icons.com/icons2/3041/PNG/512/linkedin_logo_icon_189225.png"
     },
 
     {
