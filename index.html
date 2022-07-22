@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+  <link rel="stylesheet" href="index.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <scritp defer src="index.js"></script>
+  
+</head>  
+
+<header>
+  <div class="tabs"></div>
+</header>
+<div class="options">
+<div class ="mode">
+  <label for="Description">Dark Mode</label>
+<div class="theme-switch">
+<button onClick ="darkMode();" class="switch" id="active" value="Off"></button>
+  
+    </div>
+</div>
+</div>
+
+<div class="title">
+  <h1> Bookmarked! </h1>
+</div>
+
+<div class="search">
+<input type="search" id="search" placeholder="Search Bookmarks..." />
+</div>
+  <body>
+
+<div class="container">
+  <div class="bookmarks">
+    
+  <div class="tile">
+     <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image">
+      <i class="fa fa-twitter"></i></div>
+    <div class="link">
+     <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
+    <div class="comments">Twitterverse</div>
+    <div class="tags">
+      <h5> #Tweets #microblogging #chat </h5>
+    </div>
+    
+   
+  </div>  
+  <div class="tile">
+      <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image">
+         <i class="fa fa-facebook"></i></div>
+    <div class="link">
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    </div>
+    <div class="comments">This app is getting boring</div>
+    <div class="tags">
+      <h5>#socialnetwork #connection</h5>
+    </div>
+    
+  </div>
+  <div class="tile">
+      <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image">
+    <i class="fa fa-linkedin"></i></div>
+    <div class="link">
+      <a href="https://www.linkedin.com/in/rashon-williams-26575291/" target="_blank">LinkedIn</a>
+    </div>
+    <div class="comments">Career Networking</div>
+    <div class="tags">
+      <h5>#Careers #networking #jobs</h5>
+    </div>
+    
+  </div>
+  <div class="tile">
+      <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image">
+      <i class="fa fa-instagram"></i></div>
+    <div class="link">
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div class="comments">Glitz and Glam and Photoshopped </div>
+   <div class="tags">
+     <h5>#Photos #memories #moments</h5>
+    </div>
+    
+  </div>
+  <div class="tile">
+  <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image"> <i class="fa fa-youtube"></i></div>
+    <div class="link">
+      <a href="https://www.youtube.com" target="_blank">Youtube</a>
+    </div>
+    <div class="comments">Broadcast You</div>
+    <div class="tags">
+      <h5>#Videos #content #vlogs #streaming #tutorial</h5>
+    </div>
+    
+  </div>
+  <div class="tile">
+      <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image">
+      <i class="fa fa-google-plus" aria-hidden="true"></i></div>
+    <div class="link">
+      <a href="https://www.google.com" target="_blank">Google</a>
+    </div>
+    <div class="comments">Ask Google Everything</div>
+    <div class="tags">
+      <h5>#SearchEngine #searching #information #google</h5>
+    </div>
+    
+  </div>
+  <div class="tile">
+      <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image">
+      <i class="fa fa-btc" aria-hidden="true"></i></div>
+    <div class="link">
+      <a href="https://www.bitcoin.com" target="_blank">Bitcoin</a>
+    </div>
+    <div class="comments">Future of Money</div>
+    <div class="tags">
+      <h5>#Crypto #Ethereum #Dogecoin</h5>
+    </div>
+    
+  </div> 
+  <div class="tile">
+      <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image">
+      <i class="fa fa-github" aria-hidden="true"></i></div>
+    <div class="link">
+      <a href="https://github.com/rashonwill" target="_blank">Github</a>
+    </div>
+    <div class="comments">Development Projects</div>
+    <div class="tags">
+      <h5>#Coding #fullstack #development #software</h5>
+    </div>
+    
+  </div>
+  <div class="tile">
+      <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image">
+      <i class="fa fa-codepen" aria-hidden="true"></i></div>
+    <div class="link">
+      <a href="https://www.codepen.io.com" target="_blank">CodePen</a>
+    </div>
+    <div class="comments">Code Editor</div>
+    <div class="tags">
+      <h5>#Coding #frontend #development #software #javascript</h5>
+    </div>
+    
+  </div>
+  <div class="tile">
+      <div class="edit">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+    <div class="image">
+      <i class="fa fa-twitch" aria-hidden="true"></i>
+      </div>
+    <div class="link">
+      <a href="https://www.twitch.tv" target="_blank">Twitch</a>
+    </div>
+    <div class="comments">Gamers</div>
+    <div class="tags">
+      <h5>#Gaming #Livestreaming #esports</h5>
+    </div>
+    
+  
+    </div>
+    
+ 
+<div class="tile" id="newIcon">
+    <div class="image-add">
+      <i class="fa fa-plus" aria-hidden="true"></i>
+      </div>
+    <div class="link">
+       <h5 id="new"> Add New</h5>
+    </div>
+  </div>
+    
+</div></div>
+
+<div class="bookmark-forms">
+<form class="new-bookmark">
+  <i class="fa fa-times" aria-hidden="true"></i>
+    <h2> New Book Mark </h2>
+    <input type="text" placeholder="Name" id="bookmark-name" required/>
+    <input type="url" placeholder="https://example.com" id="bookmark-url" required/>
+    <input type="text" placeholder="Tags"id="bookmark-tags"/>
+    <input type="text" placeholder="Comment" id="bookmark-comment"/>
+    <div class="user-avi">
+   <button class="avi">
+    <input type ="file" id="profilePic" accept=".png, .jpg, .jpeg, .gif" onchange="showPreview(event);"/>
+ <i class="fa fa-plus" id="addIcon" aria-hidden="true"></i>    
+   </button>
+      
+   <div class="image-preview" id="preview" style="background-image: url(https://www.materialui.co/materialIcons/file/cloud_upload_grey_192x192.png)";>   
+ <img src ="" id="avi" class="image-source" />
+   </div> </div>
+  
+  <button class="btn" type="submit">Add Bookmark</button>
+     
+  </form> 
+
+</div>
+  
+<div class="bookmark-editForm">
+    <form class="edit-bookmark">
+  <i class="fa fa-times" aria-hidden="true"></i>
+    <h2> Modify Book Mark </h2>
+    <input type="text" id="editName"/>
+    <input type="url"  id="editUrl"/>
+    <input type="text" id="editTags"/>
+    <input type="text" id="editComment" />
+  <button class="btn2" type="submit">Update</button>
+  <button class="btn2" type="submit">Delete</button>
+  </form> 
+  
+</div>
+    
+    <body>
+      </html>
