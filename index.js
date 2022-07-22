@@ -1,5 +1,4 @@
-//Dark Mode
-//Dark Mode
+//Dark Mode Toggle
 function darkMode() {
   let background = $("body");
   let switcher = $(".theme-switch");
