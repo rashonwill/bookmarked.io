@@ -283,12 +283,15 @@ function addNew() {
 
 
 function initial(){
-_setBookmarks().then(_createBookMarks).then(addNew);
+_setBookmarks();
+_createBookMarks();
+addNew();
 }
 
 
 function refresh(){
-  _createBookMarks().then(addNew);
+  _createBookMarks();
+  addNew();
 }
 
 initial();
