@@ -164,6 +164,7 @@ background:black;
   background: rgba(19, 19, 19, .9);
   transform:scale(1.06);
   width: 400px;
+  text-align: left:
 }
 
 .tile .link:hover{
