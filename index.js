@@ -164,8 +164,7 @@ function _createBookMarks() {
     let editForm = $(".bookmark-editForm").addClass("active");
   });
   
-  $(".tile").mouseover(function(event){
-    event.preventDefault();
+  $(".tile").mouseover(function(){
   $(".tile").css('background', 'rgba(19, 19, 19, .9)').css('width', '400px');
   $('.link').css('float', 'left').css('margin-left', '20px');  
   });
