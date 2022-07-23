@@ -163,6 +163,11 @@ function _createBookMarks() {
     $("#editComment").val(editCard.comment);
     let editForm = $(".bookmark-editForm").addClass("active");
   });
+  
+  $(".tile").addEventListener('mouseover', (event) => {
+  $(".tile").css('background', 'rgba(19, 19, 19, .9').css('width', '400px');
+  $('.link').css('float', 'left').css('margin-left', '20px');  
+  });
 }
 
 //Open & Close Modals
