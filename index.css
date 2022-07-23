@@ -167,7 +167,7 @@ background:black;
 }
 
 
-.tile .link{
+.link{
   margin-top: 10px;
   font-size: 22px;
   font-family: 'Staatliches';
@@ -176,7 +176,7 @@ background:black;
   text-align: center;
 }
 
-.tile .link.active{
+.link.active{
 float: left;
 margin-left: 20px;	
 }
