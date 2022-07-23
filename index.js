@@ -30,7 +30,6 @@ $(document).ready(function () {
 
 //Initial Bookmarks
 
-function _setBookmarks() {
   let initialBookmarks = [
     {
       id: 1,
@@ -109,10 +108,20 @@ function _setBookmarks() {
         "https://static.vecteezy.com/system/resources/previews/003/399/771/original/youtube-icon-editorial-free-vector.jpg"
     }
   ];
-  let _store = localStorage.setItem(
-    "myBookmarks",
-    JSON.stringify(initialBookmarks)
-  );
+
+function _setBookmarks() {
+  let checkBookmarks = JSON.parse(localStorage.getItem("myBookmarks"));
+  if(checkBookmarks || checkBookmarks === null){
+     _createBookMarks();
+    addNew();
+  }else if(!checkBookmarks){
+    localStorage.setItem("myBookmarks", JSON.stringify(initialBookmarks));
+    _createBookMarks();
+    addNew();
+   
+  }
+
+
 }
 
 function _createBookMarks() {
@@ -284,8 +293,7 @@ function addNew() {
 
 function initial(){
 _setBookmarks();
-_createBookMarks();
-addNew();
+
 }
 
 
