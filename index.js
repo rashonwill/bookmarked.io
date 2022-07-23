@@ -165,8 +165,11 @@ function _createBookMarks() {
   });
   
   $(".tile").mouseover(function(){
-  $(".tile").css('background', 'rgba(19, 19, 19, .9)').css('width', '400px');
-  $('.link').css('float', 'left').css('margin-left', '20px');  
+  $(this).closest('.tile').addClass('active');
+  $(this).closest('.link').addClass('active');  
+  }).mouseout(function() {
+  $(this).closest('.tile').removeClass('active');
+  $(this).closest('.link').removeClass('active'); 
   });
 }
 
