@@ -166,10 +166,10 @@ function _createBookMarks() {
   
   $(".tile").mouseover(function(){
   $(this).closest('.tile').addClass('active');
-  $(this).closest('.link').addClass('active');  
+  $(this).closest('.tile .link').addClass('active');  
   }).mouseout(function() {
   $(this).closest('.tile').removeClass('active');
-  $(this).closest('.link').removeClass('active'); 
+  $(this).closest('.tile .link').removeClass('active'); 
   });
 }
 
