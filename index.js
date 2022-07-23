@@ -111,10 +111,10 @@ $(document).ready(function () {
 
 function _setBookmarks() {
   let checkBookmarks = JSON.parse(localStorage.getItem("myBookmarks"));
-  if(checkBookmarks || checkBookmarks === null){
+  if(checkBookmarks){
      _createBookMarks();
     addNew();
-  }else if(!checkBookmarks){
+  }else if(!checkBookmarks || checkBookmarks === null){
     localStorage.setItem("myBookmarks", JSON.stringify(initialBookmarks));
     _createBookMarks();
     addNew();
@@ -200,9 +200,7 @@ $("#delete").on("click", (event) => {
   let newStorage = [];
   let allBookmarks = JSON.parse(localStorage.getItem("myBookmarks"));
   let removing = JSON.parse(localStorage.getItem("editID"));
-  let deleting = allBookmarks.findIndex(
-    (bookmark) => bookmark.id === removing
-  );
+  let deleting = allBookmarks.findIndex(bookmark => bookmark.id === removing);
   allBookmarks.splice(deleting, 1);
 
   newStorage = allBookmarks;
