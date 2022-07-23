@@ -167,10 +167,6 @@ background:black;
   text-align: left:
 }
 
-.tile .link:hover{
-  float: left;
-  margin-left: 20px; 
-}
 
 .tile .link{
   margin-top: 10px;
