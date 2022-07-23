@@ -226,6 +226,7 @@ background:black;
   float: left;
   margin-right: 10px;
   margin-top: 10px;
+  margin-bottom: 8px;	
 }
 
 .tile .fa.dark{
