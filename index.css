@@ -166,6 +166,11 @@ background:black;
   width: 400px;
 }
 
+.tile .link:hover{
+  float: left;
+  margin-left: 20px; 
+}
+
 .tile .link{
   margin-top: 10px;
   font-size: 22px;
@@ -173,8 +178,8 @@ background:black;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  float: left;
-  margin-left: 20px;
+/*   float: left;
+  margin-left: 20px; */
 }
 
 .link a{
