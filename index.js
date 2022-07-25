@@ -38,7 +38,7 @@ $(document).ready(function () {
       name: "Google",
       comment: "Don't be Evil",
       tags: "#google #searchengine",
-      icon: "https://blog.hubspot.com/hubfs/image8-2.jpg"
+      icon: "https://www.google.com/favicon.ico"
     },
 
     {
@@ -48,7 +48,7 @@ $(document).ready(function () {
       comment: "Build software better, together",
       tags: "#github #coding #development",
       icon:
-        "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        "https://www.github.com/favicon.ico"
     },
 
     {
@@ -58,7 +58,7 @@ $(document).ready(function () {
       comment: "Demo or it didn't happen.",
       tags: "#codepen #coding #development",
       icon:
-        "https://i.pinimg.com/736x/dd/b2/2d/ddb22d7cff633cada2c5f740180f3748--logo-google.jpg"
+        "https://www.codepen.io/favicon.ico"
     },
 
     {
@@ -68,7 +68,7 @@ $(document).ready(function () {
       comment: "What's happening?",
       tags: "#twitter #socialmedia #news",
       icon:
-        "https://www.danoneinstitute.org/wp-content/uploads/2020/06/logo-rond-twitter.png"
+        "https://www.twitter.com/favicon.ico"
     },
 
     {
@@ -77,7 +77,7 @@ $(document).ready(function () {
       name: "Facebook",
       comment: "What's on your mind?",
       tags: "#facebook #socialmedia",
-      icon: "https://cdn.icon-icons.com/icons2/1826/PNG/512/4202110facebooklogosocialsocialmedia-115707_115594.png"
+      icon: "https://www.facebook.com/favicon.ico"
     },
 
     {
@@ -87,7 +87,7 @@ $(document).ready(function () {
       comment: "What do you want to talk about?",
       tags: "#linkedin #networking #careers",
       icon:
-        "https://cdn.icon-icons.com/icons2/3041/PNG/512/linkedin_logo_icon_189225.png"
+        "https://www.linkedin.com/favicon.ico"
     },
 
     {
@@ -96,7 +96,7 @@ $(document).ready(function () {
       name: "Instagram",
       comment: "Capture and Share the World's Moments",
       tags: "#instagram #socialmedia",
-      icon: "https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg"
+      icon: "https://www.instagram.com/favicon.ico"
     },
 
     {
@@ -106,7 +106,7 @@ $(document).ready(function () {
       comment: "Broadcast Yourself",
       tags: "#youtube #videosharing",
       icon:
-        "https://static.vecteezy.com/system/resources/previews/003/399/771/original/youtube-icon-editorial-free-vector.jpg"
+        "https://www.youtube.com/favicon.ico"
     }
   ];
 
@@ -192,7 +192,7 @@ $("#update").on("click", (event) => {
   let allBookmarks = JSON.parse(localStorage.getItem("myBookmarks"));
   let edited = JSON.parse(localStorage.getItem("editID"));
   let updated = allBookmarks.filter(function (bookmark) {
-    return bookmark.id === edited;
+  return bookmark.id === edited;
   });
   updated[0].name = $("#editName").val();
   updated[0].link = $("#editUrl").val();
@@ -227,8 +227,7 @@ $("#newbie").click(function submitBookMark(event) {
   let urlLink = $("#bookmark-url").val();
   let tags = $("#bookmark-tags").val();
   let comment = $("#bookmark-comment").val();
-//   let logo = $(".bookmark-forms .image-source").attr("src");
-let logo = urlLink + favicon
+  let logo = urlLink + favicon
 
   if (name === "" && urlLink === "") {
     alert("Must provide a link and title for bookmark");
