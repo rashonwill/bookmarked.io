@@ -1,6 +1,6 @@
 
 (function(){
-  let checkMode = JSON.parse(localStorage.getItem('mode'));
+  let checkMode = localStorage.getItem('mode');
   if(!checkMode){
   localStorage.setItem('mode', 'light');
   lightMode();  
