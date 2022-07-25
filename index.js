@@ -38,6 +38,7 @@ function lightMode() {
 }
 
 $('.switch').click(function(){
+  console.log('🌝 vs 🌚')
   let checkMode = localStorage.getItem('mode');
   if(!checkMode){
   localStorage.setItem('mode', 'light');
