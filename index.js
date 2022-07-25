@@ -1,13 +1,13 @@
 
 (function(){
-  let checkMode = localStorage.getItem('mode');
+  let checkMode = JSON.parse(localStorage.getItem('mode'));
   console.log(checkMode)
   if(!checkMode){
-  localStorage.setItem('mode', 'light');
+  localStorage.setItem('mode', JSON.stringify('light'));
   lightMode();  
-  }else if(checkMode && checkMode == 'light'){
+  }else if(checkMode && checkMode === 'light'){
   lightMode();
-  }else if(checkMode && checkMode == 'dark'){
+  }else if(checkMode && checkMode === 'dark'){
   darkMode();
   }
 
@@ -40,14 +40,11 @@ function lightMode() {
 
 $('.switch').click(function(){
   console.log('🌝 vs 🌚')
-  let checkMode = localStorage.getItem('mode');
-  console.log(checkMode)
-  if(!checkMode){
-  localStorage.setItem('mode', 'light');
-  lightMode();  
-  }else if(checkMode && checkMode == 'light'){
+  let checkMode = JSON.parse(localStorage.getItem('mode'));
+  console.log(checkMode)  
+  if(checkMode && checkMode === 'light'){
   lightMode();
-  }else if(checkMode && checkMode == 'dark'){
+  }else if(checkMode && checkMode === 'dark'){
   darkMode();
   }
 })
