@@ -57,7 +57,7 @@ $(document).ready(function () {
       comment: "Demo or it didn't happen.",
       tags: "#codepen #coding #development",
       icon:
-        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1584356/codepen_logo.png"
+        "https://cdn-icons-png.flaticon.com/512/2111/2111501.png"
     },
 
     {
