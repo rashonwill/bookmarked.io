@@ -38,7 +38,7 @@ function lightMode() {
 }
 
 $('.switch').click(function(){
-  let checkMode = JSON.parse(localStorage.getItem('mode')
+  let checkMode = JSON.parse(localStorage.getItem('mode'));
   if(!checkMode){
   localStorage.setItem('mode', 'light');
   lightMode();  
