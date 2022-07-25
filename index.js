@@ -30,6 +30,7 @@ $(document).ready(function () {
 
 //Initial Bookmarks
 
+
   let initialBookmarks = [
     {
       id: 1,
@@ -219,13 +220,15 @@ $("#delete").on("click", (event) => {
 
 $("#newbie").click(function submitBookMark(event) {
   event.preventDefault();
+  const favicon = "/favicon.ico";
   let newData = [];
   let allBookmarks = JSON.parse(localStorage.getItem("myBookmarks"))
   let name = $("#bookmark-name").val();
   let urlLink = $("#bookmark-url").val();
   let tags = $("#bookmark-tags").val();
   let comment = $("#bookmark-comment").val();
-  let logo = $(".bookmark-forms .image-source").attr("src");
+//   let logo = $(".bookmark-forms .image-source").attr("src");
+let logo = urlLink + favicon
 
   if (name === "" && urlLink === "") {
     alert("Must provide a link and title for bookmark");
