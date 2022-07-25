@@ -5,9 +5,9 @@
   if(!checkMode){
   localStorage.setItem('mode', 'light');
   lightMode();  
-  }else if(checkMode && checkMode === 'light'){
+  }else if(checkMode && checkMode === light){
   lightMode();
-  }else if(checkMode && checkMode === 'dark'){
+  }else if(checkMode && checkMode === dark){
   darkMode();
   }
 
@@ -45,9 +45,9 @@ $('.switch').click(function(){
   if(!checkMode){
   localStorage.setItem('mode', 'light');
   lightMode();  
-  }else if(checkMode && checkMode === 'light'){
+  }else if(checkMode && checkMode === light){
   lightMode();
-  }else if(checkMode && checkMode === 'dark'){
+  }else if(checkMode && checkMode === dark){
   darkMode();
   }
 })
