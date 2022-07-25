@@ -1,13 +1,13 @@
 
 (function(){
-  let checkMode = JSON.parse(localStorage.getItem('mode'));
-  console.log(checkMode)
-  if(!checkMode){
-  localStorage.setItem('mode', JSON.stringify('light'));
+  let theme = localStorage.getItem('theme');
+  console.log(theme)
+  if(!theme){
+  localStorage.setItem('theme', 'lightMode');
   lightMode();  
-  }else if(checkMode && checkMode === 'light'){
+  }else if(theme && theme === 'lightMode'){
   lightMode();
-  }else if(checkMode && checkMode === 'dark'){
+  }else if(theme && theme === 'darkMode'){
   darkMode();
   }
 
@@ -23,7 +23,7 @@ function darkMode() {
    $(".search input").addClass("dms");
    $("#btn-filter").addClass("dmt");
    $("select").addClass("dmsb");
-  localStorage.setItem('mode', 'dark');
+  localStorage.setItem('theme', 'darkMode');
 }
 
 function lightMode() {
@@ -35,16 +35,16 @@ function lightMode() {
    $(".search input").removeClass("dms");
    $("#btn-filter").removeClass("dmt");
    $("select").removeClass("dmsb");
-  localStorage.setItem('mode', 'light');
+  localStorage.setItem('theme', 'lightMode');
 }
 
 $('.switch').click(function(){
   console.log('🌝 vs 🌚')
-  let checkMode = JSON.parse(localStorage.getItem('mode'));
+  let checkMode = localStorage.getItem('theme');
   console.log(checkMode)  
-  if(checkMode && checkMode === 'light'){
+  if(checkMode === 'lightMode'){
   lightMode();
-  }else if(checkMode && checkMode === 'dark'){
+  }else if(checkMode === 'darkMode'){
   darkMode();
   }
 })
