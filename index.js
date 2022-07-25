@@ -1,6 +1,7 @@
 
 (function(){
   let checkMode = localStorage.getItem('mode');
+  console.log(checkMode)
   if(!checkMode){
   localStorage.setItem('mode', 'light');
   lightMode();  
@@ -40,6 +41,7 @@ function lightMode() {
 $('.switch').click(function(){
   console.log('🌝 vs 🌚')
   let checkMode = localStorage.getItem('mode');
+  console.log(checkMode)
   if(!checkMode){
   localStorage.setItem('mode', 'light');
   lightMode();  
