@@ -43,9 +43,9 @@ $('.switch').click(function(){
   let checkMode = localStorage.getItem('theme');
   console.log(checkMode)  
   if(checkMode === 'lightMode'){
-  lightMode();
-  }else if(checkMode === 'darkMode'){
   darkMode();
+  }else if(checkMode === 'darkMode'){
+  lightMode();
   }
 })
 
