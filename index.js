@@ -1,22 +1,57 @@
+
+(function(){
+  let checkMode = JSON.parse(localStorage.getItem('mode')
+  if(!checkMode){
+  localStorage.setItem('mode', 'light');
+  lightMode();  
+  }else if(checkMode && checkMode === 'light'){
+  lightMode();
+  }else if(checkMode && checkMode === 'dark'){
+  darkMode();
+  }
+
+})();
+
 //Dark Mode Toggle
 function darkMode() {
-  let background = $("body");
-  let switcher = $(".theme-switch");
-  let btnSwitch = $(".mode button");
-  let icons = $(".tile .fa");
-  let bell = $(".tile .fa-bookmark");
-  let search = $(".search input");
-  let btnsort = $("#btn-filter");
-  let select = $("select");
-  background.toggleClass("dark-mode");
-  btnSwitch.toggleClass(".mode button active");
-  switcher.toggleClass("active");
-  icons.toggleClass("dark");
-  bell.toggleClass("dm");
-  search.toggleClass("dms");
-  btnsort.toggleClass("dmt");
-  select.toggleClass("dmsb");
+   $("body").addClass("dark-mode");
+   $(".theme-switch").addClass("active");
+   $(".mode button").addClass(".mode button active");
+   $(".tile .fa").addClass("dark");
+   $(".tile .fa-bookmark").addClass("dm");
+   $(".search input").addClass("dms");
+   $("#btn-filter").addClass("dmt");
+   $("select").addClass("dmsb");
+  localStorage.setItem('mode', 'dark');
 }
+
+function lightMode() {
+   $("body").removeClass("dark-mode");
+   $(".theme-switch").removeClass("active");
+   $(".mode button").removeClass(".mode button active");
+   $(".tile .fa").removeClass("dark");
+   $(".tile .fa-bookmark").removeClass("dm");
+   $(".search input").removeClass("dms");
+   $("#btn-filter").removeClass("dmt");
+   $("select").removeClass("dmsb");
+  localStorage.setItem('mode', 'light');
+}
+
+$('.switch').click(function(){
+  let checkMode = JSON.parse(localStorage.getItem('mode')
+  if(!checkMode){
+  localStorage.setItem('mode', 'light');
+  lightMode();  
+  }else if(checkMode && checkMode === 'light'){
+  lightMode();
+  }else if(checkMode && checkMode === 'dark'){
+  darkMode();
+  }
+})
+
+
+
+
 
 //Page Search
 $(document).ready(function () {
