@@ -98,51 +98,122 @@ $(document).ready(function () {
 
     {
       id: 4,
-      link: "https://www.twitter.com",
-      name: "Twitter",
-      comment: "What's happening?",
-      tags: "#twitter #socialmedia #news",
+      link: "https://express.adobe.com/sp",
+      name: "Adobe Express",
+      comment: "Changing the world through digital experiences.",
+      tags: "#ui #development #creativity",
       icon:
-        "https://www.twitter.com/favicon.ico"
+        "https://express.adobe.com/sp/favicon.ico"
     },
 
     {
       id: 5,
-      link: "https://www.facebook.com",
-      name: "Facebook",
-      comment: "What's on your mind?",
-      tags: "#facebook #socialmedia",
-      icon: "https://www.facebook.com/favicon.ico"
+      link: "https://dribbble.com/",
+      name: "Dribble",
+      tags: "#development #inspiration #ui #designers",
+      icon: "https://cdn.dribbble.com/assets/favicon-b38525134603b9513174ec887944bde1a869eb6cd414f4d640ee48ab2a15a26b.ico"
     },
 
     {
       id: 6,
-      link: "https://www.linkedin.com",
-      name: "LinkedIn",
-      comment: "What do you want to talk about?",
-      tags: "#linkedin #networking #careers",
+      link: "https://bennettfeely.com/clippy/",
+      name: "Clippy",
+      comment: "CSS Clip-path maker",
+      tags: "#development #css",
       icon:
-        "https://www.linkedin.com/favicon.ico"
+        "https://shots.codepen.io/bennettfeely/pen/QWPKZR-800.jpg?version=1413313919"
     },
 
     {
       id: 7,
-      link: "https://www.instagram.com",
-      name: "Instagram",
-      comment: "Capture and Share the World's Moments",
-      tags: "#instagram #socialmedia",
-      icon: "https://www.instagram.com/favicon.ico"
+      link: "https://www.csshero.org/mesher/",
+      name: "CSS Mesher",
+      comment: "Mesher by CSS Hero",
+      tags: "#css #development",
+      icon: "https://www.csshero.org/favicon.ico"
     },
 
     {
       id: 8,
-      link: "https://www.youtube.com",
-      name: "Youtube",
-      comment: "Broadcast Yourself",
-      tags: "#youtube #videosharing",
-      icon:
-        "https://www.youtube.com/favicon.ico"
-    }
+      link: "https://unsplash.com/",
+      name: "Unsplash",
+      comment: "Stock Images",
+      tags: "#images #backgrounds",
+      icon: "https://unsplash.com/favicon.ico"
+    },
+    {
+    
+      id: 9,
+      link: "https://www.postman.com/",
+      name: "Postman",
+      comment: "Build APIs togetjer",
+      tags: "#api #testing #development",
+      icon: "https://user-images.githubusercontent.com/2676579/34940598-17cc20f0-f9be-11e7-8c6d-f0190d502d64.png"
+    },
+      
+    {
+      id: 10,
+      link: "https://id.heroku.com/login",
+      name: "Heroku",
+      comment: "Great apps come from inspired and productive developers.",
+      tags: "#server #cloud",
+      icon: "https://www.herokucdn.com/favicon.ico"
+    },
+    
+    
+      {
+      id: 11,
+      link: "https://www.hexcolortool.com/",
+      name: "Hex Color Tool",
+      comment: "HTML Color codes.",
+      tags: "#css #design #development",
+      icon: "https://www.hexcolortool.com/favicon.ico"
+    },
+    
+     {
+      id: 12,
+      link: "https://fontawesome.com/",
+      name: "Font Awesome",
+      comment: "Icons for UI design.",
+      tags: "#css #design #development",
+      icon: "https://fontawesome.com/favicon.ico"
+    },
+    
+     {
+      id: 13,
+      link: "https://aws.amazon.com/console/",
+      name: "AWS Console",
+      comment: "AWS Management Console",
+      tags: "#cloud #storage",
+      icon: "https://aws.amazon.com/favicon.ico"
+    },
+    
+         {
+      id: 14,
+      link: "https://www.netlify.com/",
+      name: "Netlify",
+      comment: "Web site hosting",
+      tags: "#static #webapps",
+      icon: "https://cdn.iconscout.com/icon/free/png-256/netlify-3629537-3032320.png"
+    },
+    
+     {
+      id: 15,
+      link: "https://expo.dev/",
+      name: "Expo Dev",
+      comment: "Make any app. Run it everywhere",
+      tags: "#reactnative #mobile #apps",
+      icon: "https://static.expo.dev/static/brand/square-512x512.png"
+    },
+    
+    {
+      id: 16,
+      link: "https://www.codecademy.com/",
+      name: "Code Academy",
+      comment: "Learning is a community",
+      tags: "#learning #development",
+      icon: "https://www.codecademy.com/favicon.ico"
+    },
   ];
 
 function _setBookmarks() {
