@@ -224,6 +224,7 @@ $(".edit-bookmark .fa-times").click(function () {
 $("#update").on("click", (event) => {
   event.preventDefault();
   let newStorage = [];
+  const favicon = "/favicon.ico";
   let allBookmarks = JSON.parse(localStorage.getItem("myBookmarks"));
   let edited = JSON.parse(localStorage.getItem("editID"));
   let updated = allBookmarks.filter(function (bookmark) {
@@ -233,6 +234,7 @@ $("#update").on("click", (event) => {
   updated[0].link = $("#editUrl").val();
   updated[0].tags = $("#editTags").val();
   updated[0].comment = $("#editComment").val();
+  updated[0].icon = $("#editTags").val() + favicon;
   newStorage = allBookmarks;
   localStorage.setItem("myBookmarks", JSON.stringify(newStorage));
   let editForm = $(".bookmark-editForm").removeClass("active");
