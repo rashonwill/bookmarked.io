@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html>
 
-<head> 
-  <link rel="stylesheet" href="index.css">
+<head>
+  <title>Bookmarks</title>
+        
+    <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="index.js"></script>
-  
-</head>  
-
-<header>
-  <div class="tabs"></div>
-</header>
-<div class="options">
-<div class ="mode">
-  <label for="Description">Dark Mode</label>
+</head>
+<body>
+  <div class="container">
+    <div class="background"></div>
+    <div class="content">
+    <div class ="mode">
+  <label for="Description">Theme</label>
 <div class="theme-switch">
 <button class="switch" id="active" value="Off"></button>
+
   
     </div>
-</div>
-</div>
-
-<div class="title">
-  <h1> Bookmarked! </h1>
-</div>
-  <body>
-<div class="search">
-<input type="search" id="search" placeholder="Search Bookmarks..." />
+      <div class="search">
+        <input type="search" id="search" placeholder="Search Bookmarks..." />
+      </div>
 </div>
 
-<div class="container">
-<div class="bookmarks">
-</div></div>
+    <div class="bookmarks"></div>
+    
+    <div class="bookmark-forms">
+      <i class="fa-solid fa-xmark"></i>
+      <form class="new-bookmark">
 
-<div class="bookmark-forms">
-<form class="new-bookmark">
-  <i class="fa fa-times" aria-hidden="true"></i>
     <h2> New Book Mark </h2>
     <input type="text" placeholder="Name" id="bookmark-name" required/>
     <input type="url" placeholder="https://example.com" id="bookmark-url" required/>
@@ -46,12 +41,8 @@
   <button class="btn" type="submit" id="newbie">Add Bookmark</button>
      
   </form> 
-
-</div>
-  
-<div class="bookmark-editForm">
-    <form class="edit-bookmark">
-  <i class="fa fa-times" aria-hidden="true"></i>
+      
+      <form class="edit-bookmark">
     <h2> Modify Book Mark </h2>
     <input type="text" id="editName" required />
     <input type="url"  id="editUrl" required />
@@ -60,7 +51,8 @@
   <button class="btn2" type="submit" id="update">Update</button>
   <button class="btn2" type="submit" id="delete">Delete</button>
   </form> 
-  
-</div>
-  </body>
+    </div>
+    </div>
+  </div>
+</body>
       </html>
