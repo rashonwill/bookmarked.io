@@ -17,10 +17,8 @@ function darkMode() {
   $(".container").addClass("darkmode");
   $(".theme-switch").addClass("darkmode");
   $(".mode button").addClass(".mode button active");
-  $('.background').addClass('darkmode');
   $(".search input").addClass("darkmode");
   $(".bookmark-forms").addClass("darkmode");
-
   $(".bookmark-forms input").addClass("darkmode");
 
   $(".tile .fa").addClass("dark");
@@ -36,12 +34,9 @@ function lightMode() {
   $(".container").removeClass("darkmode");
   $(".theme-switch").removeClass("darkmode");
   $(".mode button").removeClass(".mode button active");
-  $('.background').removeClass('darkmode');
   $(".search input").removeClass("darkmode");
   $(".bookmark-forms").addClass("darkmode");
-
   $(".bookmark-forms input").removeClass("darkmode");
-
   $(".tile .fa").removeClass("dark");
   $(".tile .fa-bookmark").removeClass("dm");
   $(".search input").removeClass("dms");
@@ -284,6 +279,8 @@ function _createBookMarks() {
     $(".new-bookmark").css("display", "none");
     $(".edit-bookmark").css("display", "block");
     $(".bookmark-forms").addClass("active");
+    $(window).scrollTop(0);
+    $('.bookmarks').css('pointer-events', 'none');
   });
 
   $(".tile")
@@ -301,6 +298,7 @@ function _createBookMarks() {
 
 $(".bookmark-forms .fa-xmark").click(function () {
   $(".bookmark-forms").removeClass("active");
+  $('.bookmarks').css('pointer-events', 'auto');
 });
 
 //Update/Delete/Add Bookmarks
@@ -321,8 +319,10 @@ $("#update").on("click", (event) => {
   //   updated[0].icon = $("#editTags").val() + favicon;
   newStorage = allBookmarks;
   localStorage.setItem("myBookmarks", JSON.stringify(newStorage));
-  let editForm = $(".bookmark-editForm").removeClass("active");
+  $('.bookmarks').css('pointer-events', 'auto');
+  $(".bookmark-forms").removeClass("active");
   refresh();
+  
 });
 
 $("#delete").on("click", (event) => {
@@ -335,8 +335,10 @@ $("#delete").on("click", (event) => {
 
   newStorage = allBookmarks;
   localStorage.setItem("myBookmarks", JSON.stringify(newStorage));
-  let editForm = $(".bookmark-editForm").removeClass("active");
+  $(".bookmark-forms").removeClass("active");
+  $('.bookmarks').css('pointer-events', 'auto');
   refresh();
+  
 });
 
 $("#newbie").click(function submitBookMark(event) {
@@ -362,8 +364,6 @@ $("#newbie").click(function submitBookMark(event) {
       icon: logo
     };
 
-    console.log(newBookMark);
-
     if (!allBookmarks || allBookmarks === null) {
       newData.push(newBookMark);
       localStorage.setItem("myBookmarks", JSON.stringify(newData));
@@ -374,6 +374,7 @@ $("#newbie").click(function submitBookMark(event) {
       localStorage.setItem("myBookmarks", JSON.stringify(newData));
       refresh();
       $(".bookmark-forms").removeClass("active");
+      $('.bookmarks').css('pointer-events', 'auto');
     }
   }
 
@@ -404,6 +405,8 @@ function addNew() {
     $(".edit-bookmark").css("display", "none");
     $(".new-bookmark").css("display", "block");
     $(".bookmark-forms").addClass("active");
+    $(window).scrollTop(0);
+    $('.bookmarks').css('pointer-events', 'none');
   });
 
   return newTile;
