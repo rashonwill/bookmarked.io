@@ -1,78 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&family=Teko:wght@500&display=swap');
+
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue';
+}
 
 body{
-  background: white;
+  background: #e4eef7;
+  width: auto;
+  height: auto;
 }
 
 body::-webkit-scrollbar{
-    width: 12px;
+    width: 5px;
   }
+
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px black; 
-  background:black;
+  background-color: #000724;
 }
+
 body::-webkit-scrollbar-thumb {
-  background: grey; 
+  background: darkgrey;
   border-radius: 5px;
+  box-shadow: inset 0 0 5px #a9a9b0; 
 }
+
 
 body::-webkit-scrollbar-corner {
-background:black;
+background: #03002e;
+}
+
+body.darkmode{
+  background: black;
+  background: #000724;
+  width: auto;
+  height: auto;
+  color: #171717;
 }
 
 
-.title h1{
-  margin: 25px;
-  padding: 20px;
-  text-align: center;
-  font-size: 65px;
-  font-weight: bold;
-  font-family: "Do Hyeon";
+
+.container{
+  width: 68rem;
+  height: 45rem;
   margin: 1rem auto;
+  box-shadow: 10px 10px 15px 10px lightgrey;
+  border-radius: 20px;
  
 }
-    
+
+.container.darkmode{
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+}
+
+.content{
+  width: 68rem;
+  height: 45rem;
+  margin: 1rem auto;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  padding: 10px;
+  border-radius: 20px;
+}
+.background{
+  width: 68rem;
+  height: 45rem;
+  border-radius: 20px;
+  position: absolute;
+background-color:hsla(199,100%,80%,0.8);
+background-image:
+radial-gradient(at 69% 29%, hsla(230,72%,39%,1) 0px, transparent 50%),
+radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
+}
+
+.background.darkmode{
+   width: 68rem;
+  height: 45rem;
+  position: absolute;
+background-color:hsla(199,100%,80%,0);
+background-image:
+radial-gradient(at 69% 29%, hsla(230,72%,39%,1) 0px, transparent 50%),
+radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
+}
+
 .mode{
   display: flex;
-  flex-direction: row;
   padding: 5px;
-  float: right;
   font-weight: bold;
   font-family: 'Teko';
   font-size: 22px;
-  
+  width: 100%;
+  height: 80px;
 }
+
+.mode label{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
 
 .theme-switch{
-  background: whitesmoke;
+  background: rgba(255, 255, 255, 0.3);
   width: 60px;
-  height: 30px;
+  height: 20px;
   border-radius: 50px;
-  margin-left: 7px;
-  border: 2px solid ivory;
+  margin: .2rem .5rem;
+  box-shadow: inset 2px 2px 4px lightgrey, inset -2px -2px 4px whitesmoke;
 }
 
+.theme-switch.darkmode{
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 2px 2px 4px #6a6a6a, inset -2px -2px 4px #050606;
+}
+
+
+
 .theme-switch.active{
-  background: black;
+  background: transparent;
   border: 2px solid #222;
 }
 
 .switch {
-  background: #222;
-  width: 24px;
-  height: 96%;
+  background: darkgrey;
+  width: 20px;
+  height: 95%;
   border-radius: 100%;
   border: none;
   float: left;
-  margin-top: 1px;
   transition: 0.5s all ease;
   animation: slide 0.5s;
   cursor: pointer;
@@ -83,72 +148,143 @@ background:black;
   transition: .5s all ease;
 }
 
-.dark-mode{
-  background-color: black;
-  color: #2b2b2b;
-  color: white;
-}
-
-
-.options{
-  width: 98vw;
-  height: 50px;
-  margin-bottom: 20px;
-}
-
 .search{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 35%;
-  height: 30px;
-  padding: 15px;
-  margin: 1rem auto;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 2%;
 }
 
 .search input{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 45px;
-  width: 530px;
-  border-radius: 12px;
+  width: 12rem;
+  height: 2rem;
   border: none;
-  border-bottom: 5px solid #222;
-  border-right: 2px solid #222;
-  font-weight: bold;
-  font-size: 20px;
-  background: transparent;
-  padding: 8px;
   outline: none;
-  margin: 1rem auto;
+  padding: 5px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  font-family: 'Bebas Neue';
+  box-shadow: inset 2px 2px 4px lightgrey, inset -2px -2px 4px whitesmoke;
+
 }
 
-.search input.dms{
-  color: white;
-}
-
-.container{
-  display: block;
-  width: 1050px;
-  height: 800px;
-  padding: 15px;
-  margin-top: 50px;
-  margin: 2rem auto;
-  overflow: visible;
+.search input.darkmode{
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 2px 2px 4px #6a6a6a, inset -2px -2px 4px #050606;
 }
 
 .bookmarks{
+  width: 100%;
+  height: 35rem;
+  margin: 1rem auto;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   gap: 50px;
+  padding: 10px;
+  overflow-y: scroll;
 }
 
+.bookmarks::-webkit-scrollbar{
+    width: 5px;
+  }
+
+.bookmarks::-webkit-scrollbar-track {
+  background-color: #000724;
+}
+
+.bookmarks::-webkit-scrollbar-thumb {
+  background: darkgrey;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #a9a9b0; 
+}
+
+
+.bookmarks::-webkit-scrollbar-corner {
+background: #03002e;
+}
+
+
+.bookmark-forms{
+  width: 22rem;
+  height: 22rem;
+  margin: 1rem auto;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  transform: scale(0);
+}
+
+.new-bookmark{
+  display: none;
+}
+
+.edit-bookmark{
+  display: none;
+}
+
+.bookmark-forms.active{
+  transform: scale(1);
+}
+
+.bookmark-forms.darkmode{
+  background: rgba(255, 255, 255, .08);
+  backdrop-filter: blur(8px);
+}
+
+.bookmark-forms .fa-xmark{
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+.bookmark-forms input{
+ width: 15rem;
+  height: 2.2rem;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  font-family: 'Bebas Neue';
+  box-shadow: inset 2px 2px 4px lightgrey, inset -2px -2px 4px whitesmoke;
+  display: flex;
+  margin: 1rem auto;
+}
+
+.bookmark-forms.darkmode input{
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 2px 2px 4px #6a6a6a, inset -2px -2px 4px #050606;
+}
+
+.bookmark-forms .btn, .btn2{
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  margin: 1rem auto
+  
+}
+
+
+/* Bookmarks */
 
 .tile {
   background: transparent;
   width: 100px;
-  height: 100px;
+  height: 110px;
   border-radius: 10px;
   border: none;
   text-align: center;
@@ -157,13 +293,16 @@ background:black;
   transition:width .5s ease-in-out;
   overflow: hidden;
   white-space: wrap;
+  backdrop-filter: blur(5px);
 }
 
 
 .tile.active{
-  background: rgba(19, 19, 19, .9);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
   transform:scale(1.06);
   width: 400px;
+  height: 120px;
 }
 
 
@@ -191,8 +330,9 @@ margin-left: 20px;
   width: 75%;
   font-family: "Cabin";
   text-align: left;
-  margin-left: 110px;
-  margin-top: -15px;
+  margin-left: 90px;
+/*   margin-top: -15px; */
+  margin-top: 8px;
   color: red;
   font-size: 20px;
 
@@ -200,14 +340,14 @@ margin-left: 20px;
 
 .tile .comments{
   border: 1px solid transparent;
-  color: white;
+  color: #171717;
   width: 75%;
   font-family: "Cabin";
   font-weight: 600;
   text-align: left;
-  margin-left: 110px;
+  margin-left: 90px;
   margin-top: 40px;
-  font-size: 16px;
+  font-size: 14px;
   
   
 }
@@ -248,241 +388,6 @@ margin-left: 20px;
   color: #787878;
 }
 
-.bookmark-forms{
-  position: absolute;
-  top: 25%;
-  left: 28%;
-  width: 900px;
-  height: 650px;
-  border: 2px solid #222;
-  border-radius: 10px;
-  background: rgba(19, 19, 19, .9);
-  padding: 10px; 
-  transform:scale(0);
-}
-
-.bookmark-forms.active{
-  transform:scale(1);
-}
-
-.bookmark-forms h2{
-  color: white;
-  text-align: center;
-  font-size: 45px;
-  font-weight: bold;
-  font-family: 'Staatliches';
-}
-
-.btn{
-  position: absolute;
-  left: 42%;
-  top: 90%;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'Staatliches';
-  border: 3px solid white;
-  border-radius: 10px;
-  background: transparent;
-  width: 150px;
-  height: 45px;
-  color: white;
-  cursor: pointer;
-}
-
-.btn:hover{
-  transform:scale(1.05);
-}
-
-.fa-times{
-  color: white;
-  float: right;
-  font-size: 30px;
-  font-weight: bold; 
-  margin-top: -35px;
-  cursor: pointer;
-}
-
-.new-bookmark input{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-  height: 10px;
-  padding: 15px;
-  margin-bottom: 25px;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  border-radius: 10px;
-  border-bottom: 4px solid darkgrey;
-  border-right: 2px solid darkgrey;
-  color: white;
-  background: #222;
-  outline: none;
-}
-
-
-.bookmark-editForm{
-  position: absolute;
-  top: 25%;
-  left: 28%;
-  width: 900px;
-  height: 500px;
-  border: 2px solid #222;
-  border-radius: 10px;
-  background: rgba(19, 19, 19, .8);
-  padding: 10px; 
-  transform:scale(0);
-}
-
-.bookmark-editForm.active{
-  transform:scale(1);
-}
-
-.bookmark-editForm h2{
-  color: white;
-  text-align: center;
-  font-size: 45px;
-  font-weight: bold;
-  font-family: 'Staatliches';
-}
-
-.edit-bookmark input{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-  height: 10px;
-  padding: 15px;
-  margin-bottom: 25px;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  border-radius: 10px;
-  border-bottom: 4px solid darkgrey;
-  border-right: 2px solid darkgrey;
-  color: white;
-  background: #222;
-  outline: none;
-}
-
-
-.btn2{
-  display: inline-block;
-  margin-left: 180px;
-  margin-top: 50px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'Staatliches';
-  border: 3px solid white;
-  border-radius: 10px;
-  background: transparent;
-  width: 150px;
-  height: 45px;
-  color: white;
-  cursor: pointer;
-}
-
-.btn2:hover{
-  transform:scale(1.05);
-}
-
-
-.user-avi{
-  background-color: transparent;
-  margin-bottom: 40px;
-  align-items: center;
-  display: flex;
-  color: white;
-}
-
-.image-preview{
-  background-color: whitesmoke;  
-  background:black;
-  background-size: cover;
-  width: 100px;
-	height: 100px;
-	box-sizing: border-box;
-	border: none;
-	border-radius: 50%;
-	overflow: hidden;
-  display: block;
-  margin: 2rem auto;
-  margin-bottom: 20px;
-  margin-left: 400px;
-}
-
-.image-source{
-  display: none;
-  width: 100%;
-  height: 100%;
-}
-
-.avi{
-  width: 40px;
-  height: 38px;
-  margin-left: 455px;
-  margin-top: -80px;
-  position: absolute;
-  border: none;
-  border-radius: 10px;
-  background: #222;
-  
-}
-
-.avi input[type=file] {
-  font-size: 100px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  width: 40px;
-  height: 38px;
-}
-
-#addIcon i{
-  margin: auto;
-  z-index: 1;
-  top: 20px;
-  width: 34px;
-  height: 34px;
-  background: whitesmoke;
-  border: none;
-  display: inline-block;
-  border-radius: 100%;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  font-weight: normal;
-  transition: all .2s ease-in-out;
-  margin-left: -5px;
-  font-size: 30px;
-}
-
-.avi i{
-  font-size: 30px;
-  color: whitesmoke;
-}
-
-
-#new{
-  margin-top: -5px;
-  margin-left: -10px;
-  font-size: 18px;
-  font-family: 'Staatliches';
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-}
-
-
-.tile-new .image-add{
-  margin-left: 20px;
-}
-
-#newIcon:hover{
-  background: rgba(19, 19, 19, .8);
-}
-
 .tile2 {
   background: transparent;
   width: 100px;
@@ -496,7 +401,7 @@ margin-left: 20px;
 }
 
 .tile2 .fa{
-  font-size: 50px;
+  font-size: 40px;
 }
 
 
@@ -508,3 +413,4 @@ margin-left: 20px;
   text-decoration: none;
   margin-left: 10px;
 }
+
