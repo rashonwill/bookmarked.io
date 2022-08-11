@@ -16,7 +16,7 @@
 
 body{
   background: #e4eef7;
-  width: auto;
+  width: 100%;
   height: 100vh;
 background-color:hsla(0,0%,100%,0.67);
 background-image:
@@ -44,8 +44,8 @@ background: #03002e;
 }
 
 body.darkmode{
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100vh;
   color: #dddddd;
   background: #000724;
 background-color:hsla(197,0%,0%,1);
