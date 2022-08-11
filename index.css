@@ -17,7 +17,7 @@
 body{
   background: #e4eef7;
   width: auto;
-  height: auto;
+  height: 100vh;
 background-color:hsla(0,0%,100%,0.67);
 background-image:
 radial-gradient(at 69% 29%, hsla(230,72%,39%,1) 0px, transparent 50%),
