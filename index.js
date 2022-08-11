@@ -103,7 +103,7 @@ $(document).ready(function () {
       comment: "Changing the world through digital experiences.",
       tags: "#ui #development #creativity",
       icon:
-        "https://express.adobe.com/sp/favicon.ico"
+        "https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/4e/17/14/4e17142d-61ab-1ed6-1275-c3248348b98c/AppIconSpark-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png"
     },
 
     {
