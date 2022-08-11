@@ -214,6 +214,15 @@ $(document).ready(function () {
       tags: "#learning #development",
       icon: "https://www.codecademy.com/favicon.ico"
     },
+    
+     {
+      id: 17,
+      link: "https://www.figma.com/",
+      name: "Figma",
+      comment: "make design accessible to everyone",
+      tags: "#ui #creative #design",
+      icon: "https://static.figma.com/app/icon/1/icon-192.png"
+    },
   ];
 
 function _setBookmarks() {
