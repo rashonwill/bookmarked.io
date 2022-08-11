@@ -99,7 +99,7 @@ $(document).ready(function () {
     {
       id: 4,
       link: "https://express.adobe.com/sp",
-      name: "Adobe Express",
+      name: "AdobeExpress",
       comment: "Changing the world through digital experiences.",
       tags: "#ui #development #creativity",
       icon:
@@ -173,7 +173,7 @@ $(document).ready(function () {
      {
       id: 12,
       link: "https://fontawesome.com/",
-      name: "Font Awesome",
+      name: "FontAwesome",
       comment: "Icons for UI design.",
       tags: "#css #design #development",
       icon: "https://fontawesome.com/favicon.ico"
@@ -209,7 +209,7 @@ $(document).ready(function () {
     {
       id: 16,
       link: "https://www.codecademy.com/",
-      name: "Code Academy",
+      name: "CodeAcademy",
       comment: "Learning is a community",
       tags: "#learning #development",
       icon: "https://www.codecademy.com/favicon.ico"
@@ -314,7 +314,7 @@ $("#update").on("click", (event) => {
   updated[0].link = $("#editUrl").val();
   updated[0].tags = $("#editTags").val();
   updated[0].comment = $("#editComment").val();
-  updated[0].icon = $("#editTags").val() + favicon;
+//   updated[0].icon = $("#editTags").val() + favicon;
   newStorage = allBookmarks;
   localStorage.setItem("myBookmarks", JSON.stringify(newStorage));
   let editForm = $(".bookmark-editForm").removeClass("active");
