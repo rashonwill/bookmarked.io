@@ -60,7 +60,7 @@ radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
   width: 68rem;
   height: 45rem;
   margin: 5rem auto;
-  border: 10px solid rgba(255, 255, 255, 0.1);
+  border: 10px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
  
 }
