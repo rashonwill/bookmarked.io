@@ -18,6 +18,10 @@ body{
   background: #e4eef7;
   width: auto;
   height: auto;
+background-color:hsla(0,0%,100%,0.67);
+background-image:
+radial-gradient(at 69% 29%, hsla(230,72%,39%,1) 0px, transparent 50%),
+radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
 }
 
 body::-webkit-scrollbar{
@@ -40,11 +44,14 @@ background: #03002e;
 }
 
 body.darkmode{
-  background: black;
-  background: #000724;
   width: auto;
   height: auto;
-  color: #171717;
+  color: #dddddd;
+  background: #000724;
+background-color:hsla(197,0%,0%,1);
+background-image:
+radial-gradient(at 69% 29%, hsla(230,72%,39%,1) 0px, transparent 50%),
+radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
 }
 
 
@@ -52,8 +59,8 @@ body.darkmode{
 .container{
   width: 68rem;
   height: 45rem;
-  margin: 1rem auto;
-  box-shadow: 10px 10px 15px 10px lightgrey;
+  margin: 5rem auto;
+  border: 10px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
  
 }
@@ -65,33 +72,12 @@ body.darkmode{
 }
 
 .content{
-  width: 68rem;
-  height: 45rem;
-  margin: 1rem auto;
+  width: 100%;
+  height: 100%;
   backdrop-filter: blur(5px);
   z-index: 10;
   padding: 10px;
-  border-radius: 20px;
-}
-.background{
-  width: 68rem;
-  height: 45rem;
-  border-radius: 20px;
-  position: absolute;
-background-color:hsla(199,100%,80%,0.8);
-background-image:
-radial-gradient(at 69% 29%, hsla(230,72%,39%,1) 0px, transparent 50%),
-radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
-}
-
-.background.darkmode{
-   width: 68rem;
-  height: 45rem;
-  position: absolute;
-background-color:hsla(199,100%,80%,0);
-background-image:
-radial-gradient(at 69% 29%, hsla(230,72%,39%,1) 0px, transparent 50%),
-radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
+  border-radius: 10px;
 }
 
 .mode{
@@ -161,10 +147,11 @@ radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
   border: none;
   outline: none;
   padding: 5px;
+  padding-left: 10px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.3);
   font-family: 'Bebas Neue';
-  box-shadow: inset 2px 2px 4px lightgrey, inset -2px -2px 4px whitesmoke;
+  box-shadow: inset 2px 2px 4px lightgrey, inset -2px -2px 4px #dddddd;
 
 }
 
@@ -211,12 +198,12 @@ background: #03002e;
   position: absolute;
   top: 10%;
   left: 35%;
-  z-index: 10;
+  z-index: 99;
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 12px;
-  background: rgba(128, 128, 128, 0.3);
+  background: rgba(0, 0, 0, 1);
   border-radius: 15px;
   backdrop-filter: blur(8px);
   transform: scale(0);
@@ -289,7 +276,6 @@ background: #03002e;
   border: none;
   text-align: center;
   padding: 10px;
-  cursor: pointer;
   transition:width .5s ease-in-out;
   overflow: hidden;
   white-space: wrap;
@@ -322,6 +308,7 @@ margin-left: 20px;
 
 .link a{
   color: blue;
+  cursor: pointer;
 }
 
 .tile .tags{
