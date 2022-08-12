@@ -21,7 +21,7 @@ function darkMode() {
   $(".bookmark-forms").addClass("darkmode");
   $(".bookmark-forms input").addClass("darkmode");
 
-  $(".tile .fa").addClass("dark");
+//   $(".tile .fa").addClass("dark");
   $(".tile .fa-bookmark").addClass("dm");
   $(".search input").addClass("dms");
   $("#btn-filter").addClass("dmt");
