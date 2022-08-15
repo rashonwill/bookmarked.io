@@ -18,10 +18,10 @@ body{
   background: #e4eef7;
   width: 100%;
   height: 100vh;
-background-color:hsla(0,0%,100%,0.67);
+background-color:hsla(86,0%,100%,1);
 background-image:
-radial-gradient(at 69% 29%, hsla(230,72%,39%,1) 0px, transparent 50%),
-radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
+radial-gradient(at 83% 76%, hsla(285,22%,67%,0.75) 0px, transparent 50%),
+radial-gradient(at 14% 31%, hsla(216,72%,19%,0.41) 0px, transparent 50%);
 }
 
 body::-webkit-scrollbar{
@@ -48,10 +48,11 @@ body.darkmode{
   height: 100vh;
   color: #dddddd;
   background: #000724;
-background-color:hsla(197,0%,0%,1);
+background-color:hsla(216,53%,8%,1);
 background-image:
-radial-gradient(at 69% 29%, hsla(230,72%,39%,1) 0px, transparent 50%),
-radial-gradient(at 31% 72%, hsla(284,72%,39%,1) 0px, transparent 50%);
+radial-gradient(at 65% 48%, hsla(285,71%,17%,0.75) 0px, transparent 50%),
+radial-gradient(at 25% 51%, hsla(216,72%,19%,0.41) 0px, transparent 50%);
+
 }
 
 
